@@ -28,7 +28,7 @@ def parse_results(html, keyword, google_url, baserate):
                 rating = pattern.findall(rating)[0]
                 if float(rating) > float(baserate):
                     if link != '#':
-                        found_results.append({"google_url":google_url, 'keyword': keyword, 'link': link, 'rating.txt': rating})
+                        found_results.append({"google_url":google_url, 'keyword': keyword, 'link': link, 'rating': rating})
     return found_results
 
 def fetch_results(search_term, number_results, language_code, start):
@@ -86,5 +86,17 @@ if __name__ == '__main__':
         finally:
             time.sleep(10)
 
-    for data in datas:
-        print(data.get("link") + "\t" + data.get("rating.txt"))
+    try:
+
+        result = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "result.txt"
+
+        fresult = open(result,"w")
+
+        for data in datas:
+            fresult.write(data.get("link") + "\t" + data.get("rating"))
+            fresult.write("\n")
+            #print(data.get("link") + "\t" + data.get("rating"))
+
+        fresult.flush()
+    finally:
+        fresult.close()
