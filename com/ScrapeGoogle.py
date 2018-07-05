@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import re
+import os
 
 
 USER_AGENT = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'}
@@ -59,7 +60,9 @@ if __name__ == '__main__':
     keywords = []
     rating = 0
     try:
-        f1 = open("product.txt", "r")
+        product = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "product.txt"
+        rating = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "rating.txt"
+        f1 = open(product, "r")
         f2 = open("rating.txt", "r")
         lines = f1.readlines()
         rating = f2.read()

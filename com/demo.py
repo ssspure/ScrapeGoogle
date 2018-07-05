@@ -1,5 +1,6 @@
-s = "hello"
-# s.join("\t")
-s.join("world")
+import os
 
-print(s)
+product = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "product.txt"
+
+
+print(product)

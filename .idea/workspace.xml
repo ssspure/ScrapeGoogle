@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d461c75-ee9a-49fc-9dc2-e0f4aa5c06df" name="Default" comment="" />
+    <list default="true" id="6d461c75-ee9a-49fc-9dc2-e0f4aa5c06df" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/com/ScrapeGoogle.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ScrapeGoogle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/demo.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,16 +13,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ScrapeGoogle$demo.coverage" NAME="demo Coverage Results" MODIFIED="1530801721664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com" />
-    <SUITE FILE_PATH="coverage/ScrapeGoogle$ScrapeGoogle.coverage" NAME="ScrapeGoogle Coverage Results" MODIFIED="1530803263612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com" />
+    <SUITE FILE_PATH="coverage/ScrapeGoogle$ScrapeGoogle.coverage" NAME="ScrapeGoogle Coverage Results" MODIFIED="1530804308393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com" />
+    <SUITE FILE_PATH="coverage/ScrapeGoogle$demo.coverage" NAME="demo Coverage Results" MODIFIED="1530805529961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="ScrapeGoogle.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/ScrapeGoogle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="320">
+              <caret line="63" column="83" selection-start-line="63" selection-start-column="83" selection-end-line="63" selection-end-column="83" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -48,8 +51,8 @@
       <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -75,9 +78,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com/demo.py" />
         <option value="$PROJECT_DIR$/com/rating" />
         <option value="$PROJECT_DIR$/com/product.txt" />
+        <option value="$PROJECT_DIR$/com/demo.py" />
         <option value="$PROJECT_DIR$/com/ScrapeGoogle.py" />
       </list>
     </option>
@@ -105,6 +108,15 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -138,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ScrapeGoogle">
+  <component name="RunManager" selected="Python.demo">
     <configuration name="ScrapeGoogle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ScrapeGoogle" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,8 +195,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ScrapeGoogle" />
         <item itemvalue="Python.demo" />
+        <item itemvalue="Python.ScrapeGoogle" />
       </list>
     </recent_temporary>
   </component>
@@ -203,15 +215,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20056102" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27910239" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32959327" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15808298" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32959327" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2446352" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.10799439" />
@@ -238,7 +251,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/com/ScrapeGoogle.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -248,13 +261,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com/rating.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -270,10 +276,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/com/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com/ScrapeGoogle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="320">
+          <caret line="63" column="83" selection-start-line="63" selection-start-column="83" selection-end-line="63" selection-end-column="83" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
