@@ -63,7 +63,7 @@ if __name__ == '__main__':
         product = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "product.txt"
         rating = os.path.dirname(os.path.abspath(__file__)) + os.path.sep + "rating.txt"
         f1 = open(product, "r")
-        f2 = open("rating.txt", "r")
+        f2 = open(rating, "r")
         lines = f1.readlines()
         rating = f2.read()
     finally:
