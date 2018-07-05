@@ -36,7 +36,7 @@ def fetch_results(search_term, number_results, language_code, start):
     assert isinstance(number_results, int), 'Number of results must be an integer'
     escaped_search_term = search_term.replace(' ', '+')
 
-    google_url = 'https://www.google.co.jp/search?q=site:amazon.com+{}+currently+unavailable&num={}&hl={}&start={}'\
+    google_url = 'https://www.google.com.tw/search?q=site:amazon.com+{}+currently+unavailable&num={}&start={}'\
         .format(escaped_search_term, number_results, language_code,start)
     response = requests.get(google_url, headers=USER_AGENT)
     response.raise_for_status()
