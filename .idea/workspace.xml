@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d461c75-ee9a-49fc-9dc2-e0f4aa5c06df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/com/ScrapeGoogle.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ScrapeGoogle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/com/product.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScrapeGoogle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScrapeGoogle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/ScrapeGoogle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state relative-caret-position="387">
+              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -29,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/product.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="5" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -78,9 +79,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/com/rating" />
-        <option value="$PROJECT_DIR$/com/product.txt" />
         <option value="$PROJECT_DIR$/com/demo.py" />
         <option value="$PROJECT_DIR$/com/ScrapeGoogle.py" />
+        <option value="$PROJECT_DIR$/com/product.txt" />
       </list>
     </option>
   </component>
@@ -111,6 +112,28 @@
             <path>
               <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrapeGoogle" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScrapeGoogle" type="b2602c69:ProjectViewProjectNode" />
@@ -217,8 +240,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.27910239" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.15848528" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24821173" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17671809" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24821173" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -301,20 +324,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/product.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com/ScrapeGoogle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="387">
+          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/product.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -80,7 +80,7 @@ if __name__ == '__main__':
                 results = scrape_google(keyword, 100, "en", i*100, rating)
                 for result in results:
                     datas.append(result)
-                time.sleep(15)
+                time.sleep(20)
         except Exception as e:
             print(e)
         finally:
