@@ -76,7 +76,7 @@ if __name__ == '__main__':
     datas = []
     for keyword in keywords:
         try:
-            for i in range(0,2):
+            for i in range(0,11):
                 results = scrape_google(keyword, 100, "en", i*100, rating)
                 for result in results:
                     datas.append(result)
