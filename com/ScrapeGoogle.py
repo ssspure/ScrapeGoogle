@@ -4,8 +4,8 @@ import time
 import re
 import os
 from com.Properties import Properties
-import xlwt
 import datetime
+import xlsxwriter
 
 
 USER_AGENT = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'}
@@ -73,28 +73,40 @@ def scrape_google(search_term, number_results, language_code, start):
         raise Exception("Appears to be an issue with your connection")
 
 def writeToExcel(datas):
-    wbk = xlwt.Workbook()
-    sheet = wbk.add_sheet('Sheet1', cell_overwrite_ok=True)
+
+    nowTime = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+    filename = nowTime + "_" + properties.get("products")
+
+    resultFilePath = properties.get("resultFilePath")
+
+    if not os.path.exists(resultFilePath):
+        os.makedirs(resultFilePath)
+
+    workbook = xlsxwriter.Workbook(os.path.abspath(resultFilePath) + os.sep + filename + ".xlsx")
+    worksheet = workbook.add_worksheet()
+
+
     row = 0
-    sheet.write(row, 0, "网址")
-    sheet.write(row, 1, "评分")
-    sheet.write(row, 2, "标题")
+    worksheet.write(row, 0, "网址")
+    worksheet.write(row, 1, "评分")
+    worksheet.write(row, 2, "标题")
 
     row = row + 1
 
     for data in datas:
-        sheet.write(row, 0, data.get("link"))
-        sheet.write(row, 1, data.get("rating"))
-        sheet.write(row, 2, data.get("title"))
+        worksheet.write(row, 0, data.get("link"))
+        worksheet.write(row, 1, data.get("rating"))
+        worksheet.write(row, 2, data.get("title"))
         row = row + 1
-
-    nowTime = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-    filename = nowTime + data.get("keyword")
-    wbk.save(filename + '.xls')
 
 
 
 if __name__ == '__main__':
+
+    # 获取程序开始执行的时间
+    starttime = datetime.datetime.now()
+
+    print("程序开始执行!!!")
 
     # 获取产品列表
     products = []
@@ -108,13 +120,24 @@ if __name__ == '__main__':
     for product in products:
         try:
             for i in range(0, 10):
+                print("开始获取第{}页数据!!!".format(str(i+1)))
                 results = scrape_google(product, 100, "en", i*100)
                 for result in results:
                     datas.append(result)
                 time.sleep(int(properties.get("interval")))
+                print("第{}页数据获取完毕!!!".format(str(i+1)))
         except Exception as e:
             print(e)
         finally:
             time.sleep(10)
 
+    print("所有数据获取完毕，开始生成结果文件!!!")
     writeToExcel(datas)
+    print("结果文件生成完毕!!!")
+
+    # 获取程序执行结束的时间
+    endtime = datetime.datetime.now()
+    intervalTime = str(endtime - starttime)
+    minute = intervalTime.split(":")[1]
+    seconds = intervalTime.split(":")[2].split(".")[0]
+    print("程序共运行{}分{}秒".format(minute,seconds))
