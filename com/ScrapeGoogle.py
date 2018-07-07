@@ -135,6 +135,9 @@ if __name__ == '__main__':
     writeToExcel(datas)
     print("结果文件生成完毕!!!")
 
+    # 打开文件夹尽在Windows系统下有效
+    os.system("start explorer " + properties.get("resultFilePath"))
+
     # 获取程序执行结束的时间
     endtime = datetime.datetime.now()
     intervalTime = str(endtime - starttime)
